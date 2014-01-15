@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.Lonelytwitter;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Date;
+
+import ca.ualberta.cs.lonelytwitter.R;
 
 import android.app.Activity;
 import android.content.Context;
