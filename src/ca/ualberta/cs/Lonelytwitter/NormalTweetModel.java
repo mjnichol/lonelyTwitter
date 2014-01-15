@@ -1,9 +1,9 @@
 package ca.ualberta.cs.Lonelytwitter;
 import java.util.Date;
 
-public class NormalTweet extends LonelyTweetModel {
+public class NormalTweetModel extends LonelyTweetModel {
 
-	public NormalTweet(String text) {
+	public NormalTweetModel(String text) {
 		super(text);
 	}
 
