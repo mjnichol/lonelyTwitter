@@ -2,16 +2,15 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 
-public class lonelyTweetModel {
-	private String text;
-	private Date timestamp;
+public abstract class lonelyTweetModel {
+	protected String text;
+	protected Date timestamp;
 	
 	public String getText() {
 		return text;
 	}
-	public void setText(String text) {
-		this.text = text;
-	}
+	public abstract void setText(String text);
+	
 	public Date getTimestamp() {
 		return timestamp;
 	}
@@ -22,12 +21,15 @@ public class lonelyTweetModel {
 		super();
 		this.text = text;
 		this.timestamp = timestamp;
+	
 	}
 	
 	public lonelyTweetModel(String text) {
 		super();
 		this.text = text;
 		this.timestamp = new Date();
+		
 	}
-	
+	/* add an abstract method to tell if a tweet is important */
+	public abstract boolean getUrgency();
 }
