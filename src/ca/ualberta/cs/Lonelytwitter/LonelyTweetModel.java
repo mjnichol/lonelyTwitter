@@ -21,7 +21,6 @@ public abstract class LonelyTweetModel {
 		super();
 		this.text = text;
 		this.timestamp = timestamp;
-	
 	}
 	
 	public LonelyTweetModel(String text) {
@@ -30,6 +29,10 @@ public abstract class LonelyTweetModel {
 		this.timestamp = new Date();
 		
 	}
+	public LonelyTweetModel(){
+		super();
+	}
+	
 	/* add an abstract method to tell if a tweet is important */
 	public abstract boolean getUrgency();
 }
